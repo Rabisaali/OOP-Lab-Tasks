@@ -12,13 +12,13 @@ class Area {
         }
 
         void area (double radius) {
-            cout << "The area of teh circle is: " << 3.141*radius*radius << endl;
+            cout << "The area of the circle is: " << 3.141*radius*radius << endl;
         }
 };
 
 int main () {
     Area a1;
-    a1.area(5);
-    a1.area(5, 4);
-    a1.area(2.5);
+    a1.area(5); // area of square
+    a1.area(5, 4); // area of rectangle
+    a1.area(2.5); // area of circle
 }

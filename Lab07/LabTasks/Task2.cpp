@@ -31,9 +31,9 @@ class Intern: public Employee {
 
 int main () {
     Manager m1;
-    m1.calculateSalary();
+    m1.calculateSalary(); // function of base class is overridden by the function manager class
     Developer d1;
-    d1.calculateSalary();
+    d1.calculateSalary(); // function of base class is overridden by the function developer class
     Intern i1;
-    i1.calculateSalary();
+    i1.calculateSalary(); // function of base class is overridden by the function intern class
 }
