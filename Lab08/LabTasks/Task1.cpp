@@ -11,16 +11,16 @@ class Rectangle {
                 length=1;
                 cout << "Invalid length. Length set to 1" << endl;
             }
-            if (width>0) width = w;
+            if (w>0) width = w;
             else {
                 width=1;
                 cout << "Invalid width. Width set to 1" << endl;
             }
         }
-        friend void calculate(Rectangle r);
+        friend void calculate(const Rectangle& r);
 };
 
-void calculate (Rectangle r) {
+void calculate (const Rectangle& r) {
     float area = r.length*r.width;
     float perimeter = 2*(r.length+r.width);
     cout << "Area: " << area << " || Perimeter: " << perimeter << endl;
