@@ -38,6 +38,9 @@ class Employee : virtual public Person {
 class TeachingAssistant : public Student, public Employee {
     public:
         TeachingAssistant(int s, float g, string id, string n) : Student (g, id, n) , Employee (s, id, n), Person(id, n) {}
+        // Without virtual inheritance, TeachingAssistant would have two copies of Person,
+        // causing ambiguity when calling displayPerson().
+        // Virtual inheritance ensures only one shared Person object.
         void displayTA() {
             displayPerson();
             displayStudent();
