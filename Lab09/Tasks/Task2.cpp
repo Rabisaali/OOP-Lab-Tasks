@@ -2,9 +2,9 @@
 using namespace std;
 
 class Notification {
-    public:
+    protected:
         string recipient;
-
+    public:
         Notification(string r) {
             recipient = r;
         }
