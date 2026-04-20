@@ -84,6 +84,6 @@ int main () {
     Transaction* t;
 
     Deposit d1("12345", 50000);
-    t=&d1;
+    t = &d1;
     t->processTransaction();
 }
