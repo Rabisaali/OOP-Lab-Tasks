@@ -33,7 +33,9 @@ public:
 
     double amountToBeWithdrawn;
 
-    Withdrawal(string a, double val, double amount) : Transaction(a, amount) {}
+    Withdrawal(string a, double val, double amount) : Transaction(a, amount) {
+        amountToBeWithdrawn = val;
+    }
 
     void processTransaction() {
         cout << "Withdrawal Transaction" << endl; 
@@ -65,7 +67,7 @@ public:
         cout << "Transfer Transaction" << endl; 
         cout << "Account to be Transferred to: " << accountToBeTransferredTo << endl;
         cout << "Your Account Number: " << accountNumber << endl;
-        double output = (amount>=amountToBeTransferred)? amountToBeTransferred: amount-amountToBeTransferred;
+        double output = (amount >= amountToBeTransferred) ? amountToBeTransferred : amount;
         cout << "Previous amount(in your account): " << amount << " | ";
         if (amount-amountToBeTransferred>=0) {
             amount-=amountToBeTransferred;
