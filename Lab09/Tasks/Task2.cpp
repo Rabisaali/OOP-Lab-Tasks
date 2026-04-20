@@ -2,5 +2,8 @@
 using namespace std;
 
 class Notification {
-    
+    public:
+        string recipient;
+
+        Notificat
 }

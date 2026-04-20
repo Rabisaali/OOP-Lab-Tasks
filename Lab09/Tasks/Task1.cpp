@@ -81,6 +81,9 @@ public:
 };
 
 int main () {
+    Transaction* t;
+
     Deposit d1("12345", 50000);
-    d1.processTransaction();
+    t=&d1;
+    t->processTransaction();
 }
