@@ -51,7 +51,7 @@ int main () {
             throw "Error: Invalid input for second number!";
         }
 
-        Calculator<int> c(a, b);
+        Calculator<double> c(a, b);
         cout << "Addition: " << c.add() << endl;
         cout << "Subtraction: " << c.subtract() << endl;
         cout << "Multiplication: " << c.multiply() << endl;
