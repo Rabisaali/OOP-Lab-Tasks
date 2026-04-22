@@ -2,13 +2,13 @@
 using namespace std;
 
 template <typename T>
-class GeneticArray {
+class GenericArray {
     private:
         int size;
         T arr[100];
 
     public:
-        GeneticArray(int s) {
+        GenericArray(int s) {
             size = s;
         }
 
@@ -37,19 +37,19 @@ class GeneticArray {
 };
 
 int main () {
-    GeneticArray<int> g1(5);
+    GenericArray<int> g1(5);
     g1.inputElements();
     cout << "The maximum value in the array is: " << g1.maximumElements() << endl;
     g1.displayElements();
     cout << endl;
 
-    GeneticArray<float> g2(5);
+    GenericArray<float> g2(5);
     g2.inputElements();
     cout << "The maximum value in the array is: " << g2.maximumElements() << endl;
     g2.displayElements();
     cout << endl;
 
-    GeneticArray<char> g3(5);
+    GenericArray<char> g3(5);
     g3.inputElements();
     cout << "The maximum value in the array is: " << g3.maximumElements() << endl;
     g3.displayElements();
