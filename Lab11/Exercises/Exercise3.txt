@@ -1,0 +1,5 @@
+ID: 67 | Name: Rabisa | GPA: 3.95
+ID: 34 | Name: Ali | GPA: 3.4
+ID: 45 | Name: Ahmed | GPA: 3.67
+ID: 78 | Name: Asad | GPA: 3.56
+ID: 89 | Name: Sara | GPA: 3.9
