@@ -29,6 +29,11 @@ int main() {
 
     ofstream file("student.dat", ios::binary);
 
+    if (!file) {
+        cout << "Write file error!" << endl;
+        return 1;
+    }
+
     for (int i = 0; i < n; i++) {
         file.write((char*)&s[i], sizeof(s[i]));
     }
@@ -38,6 +43,11 @@ int main() {
 
     ifstream infile("student.dat", ios::binary);
 
+    if (!infile) {
+        cout << "Read file error!" << endl;
+        return 1;
+    }
+    
     cout << "\nStored Student Records:\n";
 
     for (int i = 0; i < n; i++) {
