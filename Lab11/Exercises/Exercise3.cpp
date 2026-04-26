@@ -22,6 +22,10 @@ class Student {
         void writeToFile() {
             fstream file;
             file.open("Exercise3.txt", ios::app);
+            if (!file) {
+                cout << "File error!" << endl;
+                return;
+            }
             file << "ID: " << id << " | Name: " << name << " | GPA: " << gpa << endl;
             file.close();
         }
