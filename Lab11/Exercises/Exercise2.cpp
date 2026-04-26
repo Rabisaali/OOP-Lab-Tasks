@@ -7,7 +7,7 @@ int main () {
     file.open("Exercise2.txt", ios::in);
     if (!file) {
         cout << "Error: File not found!" << endl;
-        return 0;
+        return 1;
     }
     int arr[10];
     for (int i=0; i<10; i++) {

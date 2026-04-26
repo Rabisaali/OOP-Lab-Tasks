@@ -16,7 +16,7 @@ int main () {
 
     if (!file) {
         cout << "Error: file could not be opened!" << endl;
-        return 0;
+        return 1;
     }
 
     file << "Name: " << name <<  endl;

@@ -8,7 +8,7 @@ int main () {
 
     if (!file) {
         cout << "Error: File not found" << endl;
-        return 0;
+        return 1;
     }
 
     int count = 0;
