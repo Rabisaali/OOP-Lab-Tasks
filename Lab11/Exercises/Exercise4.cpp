@@ -25,6 +25,11 @@ int main() {
 
     ofstream file("student.dat", ios::binary);
 
+    if (!file) {
+        cout << "File error!" << endl;
+        return 1;
+    }
+
     for (int i = 0; i < n; i++) {
         file.write((char*)&s[i], sizeof(s[i]));
     }
